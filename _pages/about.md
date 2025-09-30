@@ -57,7 +57,7 @@ the candid version:
 
 - I began to get a groove during my work with [Sentient](https://sentient.io/)(2023), met a couple AI ninjas, and learned some ninjutsu myself.
 
-- Then I came to the USA, to [Northeastern](https://www.northeastern.edu/) for my Masters in AI. before I was overwhelmed by a peek, and now, this was like clif-jumping into the ocean 🏊🏽‍♂️.
+- Then I came to the USA, to [Northeastern](https://www.northeastern.edu/) for my Masters in AI. before I was overwhelmed by a peek, and now, this was like cliff-jumping into the ocean 🏊🏽‍♂️.
 
 - I was now clearer than ever about I wanted to do. My view of AI when from "imbuing computers with magic 👶🏽🪄" to "Recreating physics with data 👨🏾‍🔬👨🏾‍💻"
 
