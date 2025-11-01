@@ -36,17 +36,17 @@
   "work_short": [
     {
       "name": "Norfolk Southern",
-      "position": "Computer Vision Intern",
+      "position": "Generative AI Intern",
       "startDate": "2025-01-13",
       "endDate": "2025-04-04",
-      "summary": "Developed high-throughput, GPU-accelerated computer vision pipelines for task-agnostic dataset curation for railroad analytics."
+      "summary": "Developed an agentic RAG solution and engineered GPU-accelerated, high-throughput computer vision and Big Data pipelines."
     },
     {
       "name": "Inflohealth",
-      "position": "Generative AI Intern",
+      "position": "Artificial Intelligence Intern",
       "startDate": "2024-05-20",
       "endDate": "2024-08-20",
-      "summary": "Built agentic AI solutions that processes massive datasets of healthcare guidelines for trustworthy conversational AI."    
+      "summary": "Built a language model pipeline that processes millions of radiology reports to curate datasets for downstream healthcare analytics."    
     },
     {
       "name": "Sentient.io",
@@ -66,30 +66,31 @@
   "work": [
     {
       "name": "Norfolk Southern",
-      "position": "Computer Vision Intern",
+      "position": "Generative AI Intern",
       "startDate": "2025-01-13",
       "endDate": "2025-04-04",
       "summary": "Developed an agentic RAG solution and engineered GPU-accelerated, high-throughput computer vision and Big Data pipelines.",
       "highlights": [
-        "Built a semi-automatic labeler that proposes label priors, which was shown to 3x human semantic segmentation labeling speed.",
-        "Integrated an automated data-augmentation prompter that generated polylines to guide, accelerate, and automate data curation, seamlessly importable into the CVAT platform for training defect detection models.",
-        "Developed a PyTorch-based zero-shot segmentation model that leverages depth maps from a foundational depth estimator toidentify parts of railway cars by their relative depth in the scene",
-        "Prototyped a few-shot segmentation pipeline using VRP-SAM to accurately segment novel classes from as few as 20–50 exemplars, compared to conventional models that require 5,000–10,000 labeled images for fine-tuning."
+        "Implemented a multimodal RAG workflow on the Qdrant vector database for large-scale PDF-based question answering",
+        "Developed a large-scale PDF retrieval pipeline using the ColPali model, improving top-5 recall by 8% over OCR solutions.",
+        "Built a multi-agent system that divides the task into sub-tasks, leverages a document retriever, a metadata crawler, and feedback loops to maximize cited content and diagram inclusions in the generated answer",
+        "Implemented a system prompt refinement module using Mutual Information Maximization on LLM-generated candidates which demonstrated an average reduction of 6.2 steps for task completion, and a 14% increase in task completion rate.",
+        "Accelerated data manipulation with NVIDIA RAPIDS and Spark, saving 23% in cost and reducing total job time by 30%.",
+        " Migrated the data loader pipeline to NVIDIA DALI and Ray, boosting throughput of large-scale model evaluation by 2.1 times."
       ]
     },
     {
       "name": "Inflohealth",
-      "position": "Generative AI Intern",
+      "position": "Artificial Intelligence Intern",
       "startDate": "2024-05-20",
       "endDate": "2024-08-20",
       "summary": "Built a language model pipeline that processes millions of radiology reports to curate datasets for downstream healthcare analytics.",
       "highlights": [
-        "Implemented a multimodal RAG workflow on the Qdrant vector database for large-scale PDF-based question answering.",
-        "Developed a large-scale PDF retrieval pipeline using the ColPali model, improving top-5 recall by 8% over OCR solutions.",
-        "Built a multi-agent system using LangGraph that divides the task into sub-tasks, leverages a document retriever, a metadata crawler, and feedback loops to maximize cited content in the generated answer.",
-        "Implemented a system prompt refinement module using Mutual Information Maximization on LLM-generated candidates which demonstrated an average reduction of 6.2 steps for task completion, and a 14% increase in task completion rate.",
-        "Built a multi stage reranking based RAG workflow with LlamaIndex for retrieval based on medical rules to maximize.",
-        "Migrated the data loader pipeline to NVIDIA DALI and Ray, boosting throughput of large-scale model evaluation by 2.1 times."
+        "Fine-tuned the CXR-BERT biomedical transformer language model on 830,000 radiology reports across four T4 GPUs using Distributed Data Parallel and adapted it for knowledge-graph creation using the RadGraph-XL dataset.",
+        "Built an explainability module that highlights text spans relevant to specific nodes by visualizing BERT’s attention maps.",
+        "Achieved a retrieval F1 score of 0.81, on par with LLaMA 3 8B, while additionally supporting evidence selection",
+        "Containerized the retrieval system as a serverless FastAPI application and deployed it on AWS App Runner",
+        "Developed an XGBoost classification pipeline on radiology claims (such as encounter, diagnosis, and procedure codes) to predict follow-up likelihood, achieving 0.72 AUC and improving recall of missed visits by 18%."
       ]
     },
     {
