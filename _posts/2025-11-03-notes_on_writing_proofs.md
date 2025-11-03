@@ -6,7 +6,11 @@ description: glossary of terms and techniques for constructing basic proofs
 tags: math
 # categories: sample-posts
 related_posts: false
+toc:
+  beginning: true
 ---
+
+## Terms
 
 * A **Statement** is either true or false but not both.
 
@@ -175,7 +179,7 @@ related_posts: false
   * Start from the assumptions and proceed till you clearly validate the claim in its raw form.
   * Occasionally brief the reader about your intention before you actually proceed with the steps rigorously.
 
-### Direct proofs involving sets
+## Direct proofs involving sets
 
 * A common statement involving sets to prove is “$S$ is a subset of $T$” ($S \subset T$). To prove this, let $U$ be the universal set. Prove
   $\forall x \in U$, if $x \in S$ then $x \in T$.
@@ -204,7 +208,7 @@ related_posts: false
 * To prove 2 sets are equal $S = T$, you can prove:
   $S \subset T \land T \subset S$.
 
-### Proving compounds of logical equivalencies, biconditionals, and more
+## Proving compounds of logical equivalencies, biconditionals, and more
 
 Consider the following example: Given $P$, show $Q$ holds if and only if $R$.
 
@@ -308,7 +312,7 @@ Consider the following example: Given $P$, show $Q$ holds if and only if $R$.
        a^2 + b^2 - 2ab = (a - b)^2 \implies a = b
        $$
 
-### Proof by contradiction
+## Proof by contradiction
 
 To prove $P$, we prove $\lnot P \implies C$ where $C$ is a *Contradiction*. The *Tautology* $(\lnot P \implies C) \implies P$ validates this method.
 
@@ -353,7 +357,7 @@ Truth-table illustration:
 | F   | T         | F   | F                    | T                                 |
 | F   | T         | F   | F                    | T                                 |
 
-#### Examples
+### Examples
 
 1. Prove / Disprove that $\log_2(3)$ is rational.
 
@@ -403,11 +407,11 @@ Truth-table illustration:
 
    $6q^2$ cannot be a perfect square (it has an outstanding factor of 6), whereas the RHS is a perfect square. This is a contradiction. Thus assuming $\sqrt{2} + \sqrt{3}$ is rational leads to a contradiction, so $\sqrt{2} + \sqrt{3}$ is irrational.
 
-### Proving that something doesn’t exist
+## Proving that something doesn’t exist
 
 This is done using a *proof by contradiction*, i.e. showing that said thing existing leads to a *contradiction*.
 
-### Proving multiple cases
+## Proving multiple cases
 
 * Used when assumptions are in the form of a disjunction:
   $(P \lor Q) \implies R \equiv (P \implies R) \land (Q \implies R)$.
@@ -419,7 +423,7 @@ This is done using a *proof by contradiction*, i.e. showing that said thing exis
 
   $n$ being positive, negative, or $0$ is another common case split that covers all integers.
 
-### Mathematical induction
+## Mathematical induction
 
 1. **Basic Mathematical Induction**: To prove an open sentence $P(n)$ with truth set $\mathbb{N}$, use
    $P(1)$ and $P(k) \implies P(k + 1)$.
